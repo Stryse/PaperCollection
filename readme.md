@@ -1,0 +1,1 @@
+## OEP II. Beadandó feladat (25) - Kis Gergely Domonkos (VMT982)
