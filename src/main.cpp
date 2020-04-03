@@ -2,7 +2,7 @@
 #include "student.h"
 #include "schoolClass.h"
 
-void listStudents(const std::string& filePath);
+void listStudents(const std::string& filePath, std::ostream& stream = std::cout);
 int countClasses(const std::string& filePath);
 void handleSPaperDataEnorError(const StudentPaperDataEnor::Errors& e, const std::string& filePath);
 
@@ -45,14 +45,14 @@ int main()
 #include "tests.h"
 #endif
 
-void listStudents(const std::string& filePath)
+void listStudents(const std::string& filePath, std::ostream& stream)
 {
     StudentPaperDataEnor t(filePath);
     for (t.first(); !t.end(); t.next())
     {
         if (t.current().hasMoreThan5kg)
         {
-            std::cout << t.current().name << " " << t.current().className << std::endl;
+            stream << t.current().name << " " << t.current().className << std::endl;
         }
     }
 }
