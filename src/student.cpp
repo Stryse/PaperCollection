@@ -33,13 +33,11 @@ void StudentPaperDataEnor::read()
         if(_sx == Status::norm)
         {
             _dx.name = oss.str();
-            _dx.name.pop_back();
+            _dx.name.pop_back(); // Trimming name
             _dx.className = tmp;
-            std::getline(iss.ignore(),_dx.data);
+            std::getline(iss.ignore(),_dx.data); // Trimming and reading to data
         }
     }
-    else if (_sx == Status::abnorm && !_x.eof()) // TODO lehet nem kell
-        throw StudentPaperDataEnor::Errors::INVALID_VALUE_READ;    
 }
 
 void StudentPaperDataEnor::next()

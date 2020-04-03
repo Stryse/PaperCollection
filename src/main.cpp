@@ -76,11 +76,6 @@ void handleSPaperDataEnorError(const StudentPaperDataEnor::Errors& e, const std:
     case StudentPaperDataEnor::Errors::FILE_ERROR:
         std::cerr << "Could not open file: \"" << filePath << "\" Exiting..." << std::endl;
         break;
-
-    case StudentPaperDataEnor::Errors::INVALID_VALUE_READ:
-        std::cerr << "An invalid line has been read from input file" << std::endl;
-        break;
-
     default:
         std::cerr << "Unhandled exception" << std::endl;
         break;
