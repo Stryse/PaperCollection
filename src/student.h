@@ -23,7 +23,7 @@ enum class Status { norm, abnorm };
 struct StudentPaperDataEnor
 {
     public:
-            enum class Errors { FILE_ERROR };
+            enum class Errors { FILE_ERROR, INVALID_VALUE_READ };
 
             StudentPaperDataEnor(const std::string& fname);
             ~StudentPaperDataEnor();

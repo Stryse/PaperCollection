@@ -38,6 +38,8 @@ void StudentPaperDataEnor::read()
             std::getline(iss.ignore(),_dx.data);
         }
     }
+    else if (_sx == Status::abnorm && !_x.eof()) // TODO lehet nem kell
+        throw StudentPaperDataEnor::Errors::INVALID_VALUE_READ;    
 }
 
 void StudentPaperDataEnor::next()
