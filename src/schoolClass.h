@@ -14,7 +14,6 @@ class SchoolClassEnor
             bool end() const { return _end; }
     private:
             StudentPaperDataEnor _y;
-            Status _sy;
             StudentPaperData _dy;
             bool _act;
             bool _end;
