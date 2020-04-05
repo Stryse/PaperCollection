@@ -29,7 +29,7 @@ int main()
     try
     {
         std::cout << "==============Second Task==============" << std::endl;
-        std::cout << countClasses(filePath) << std::endl;  
+        std::cout << "Result: "<< countClasses(filePath) << " classes." << std::endl;  
     }
     catch (const StudentPaperDataEnor::Errors &e)
     {
