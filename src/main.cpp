@@ -6,7 +6,7 @@ void listStudents(const std::string& filePath, std::ostream& stream = std::cout)
 int countClasses(const std::string& filePath);
 void handleSPaperDataEnorError(const StudentPaperDataEnor::Errors& e, const std::string& filePath);
 
-//#define NORMAL_MODE
+#define NORMAL_MODE
 #ifdef NORMAL_MODE
 
 int main()

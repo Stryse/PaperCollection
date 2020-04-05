@@ -1,5 +1,5 @@
-Nagyon Szorgalmas Eszter 4c 2018/09/10 4.5 2018/09/22 3.5 2018/11/05 1.2
-Farkas Antal 2b 2018/10/12 1.3 2018/10/14 5.6
-Szabo Adam 2b 2018/10/12 2.5
-Szakacs Daniel 3d 2018/08/23 10
 Bodo Jozsef 1a 2018/09/15 2.4 2018/09/30 3.2
+Farkas Antal Laszlo 2b 2018/10/12 1.3 2018/10/14 5.6
+Szabo Adam 2b 2018/10/12 5.5
+Szakacs Daniel 3d 2018/08/23 10
+Nagyon Szorgalmas Eszter 4c 2018/09/10 4.5 2018/09/22 3.5 2018/11/05 1.2

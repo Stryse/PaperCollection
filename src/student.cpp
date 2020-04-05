@@ -25,15 +25,17 @@ void StudentPaperDataEnor::read()
         std::istringstream iss(line);
         std::ostringstream oss;
         std::string tmp;
+
+        iss >> tmp;
+        oss << tmp;
         for(iss >> tmp; !isClassName(tmp) && (_sx = (!iss.fail()) ? Status::norm : Status::abnorm) == Status::norm; iss >> tmp)
         {
-            oss << tmp << " ";
+            oss << " " << tmp;
         }
 
         if(_sx == Status::norm)
         {
             _dx.name = oss.str();
-            _dx.name.pop_back(); // Trimming name
             _dx.className = tmp;
             std::getline(iss.ignore(),_dx.data); // Trimming and reading to data
         }
