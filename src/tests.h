@@ -122,7 +122,7 @@ TEST_CASE("Four Students - Result position test")
 
 
     /// countClasses Tests ///
-
+// COUNT TESTING
 TEST_CASE("File Not exists 2")
 {
     REQUIRE_THROWS_AS(countClasses("<>/*:nofile.txt"), StudentPaperDataEnor::Errors);
@@ -175,6 +175,7 @@ TEST_CASE("Two classes")
     }
 }
 
+//Condition test
 TEST_CASE("Test student with multiple contributions")
 {
     SECTION("None of them checks","TestMUL1.txt")
